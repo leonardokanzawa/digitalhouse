@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Cadastro de Usuário</title>
+  </head>
+  <body>
+    <!-- Site para pesquisar os tipos de inputs https://www.w3schools.com/html/html_form_input_types.asp -->
+    <form action="cadastro.html" method="post">
+      <label for="nomeCompleto">Nome Completo</label><br>
+        <input type="text" name="nomeCompleto" id="nomeCompleto" placeholder="Leonardo Kanzawa"><br>
+      <!-- <input type="submit" name="Enviar" value="Enviar"> -->
+      <label for="email">E-mail</label><br>
+        <input type="email" name="email" id="email" placeholder="leonardo@7bi.me"><br>
+          <legend><em>Preferencialmente email do trabalho</em></legend>
+      <label for="senha">Senha</label><br>
+        <input type="password" name="senha" id="senha"><br>
+      <label for="genero">Gênero</label><br>
+        <input type="radio" name="genero" id="masculino" value="masculino">Masculino<br>
+        <input type="radio" name="genero" id="feminimo" value="feminimo">Feminimo<br>
+        <input type="radio" name="genero" id="outro" value="outro">Outro<br>
+      <label for="hobbies">Hobbies Preferidos</label><br>
+        <label for="futebol"><input type="checkbox" name="hobbies" id="futebol" value="futebol">Futebol</label><br>
+        <label for="dancar"><input type="checkbox" name="hobbies" id="dancar" value="dancar">Dançar</label><br>
+        <label for="mergulhar"><input type="checkbox" name="hobbies" id="mergulhar" value="mergulhar">Mergulhar</label><br>
+        <label for="dormir"><input type="checkbox" name="hobbies" id="dormir" value="dormir">Futebol</label><br>
+      <label for="pessoasNaFamilia">Pessoas na familia</label><br>
+        <select name="pessoasNaFamilia">
+          <option selected disabled>Selecione uma opção</option>
+          <option value="faixa1">1 a 2</option>
+          <option value="faixa2">2 a 3</option>
+          <option value="faixa3">3 a 4</option>
+          <option value="faixa5">Acima de 4</option>
+        </select><br>
+      <button type="submit" name="enviar">Enviar</button>
+    </form>
+  </body>
+</html>

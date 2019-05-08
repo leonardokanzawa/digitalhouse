@@ -1,0 +1,24 @@
+body{
+  font-family: sans-serif;
+  background-image: url(../Imagens/teste1.jpeg);
+  background-attachment: fixed;
+  background-repeat:repeat-x;
+}
+p{
+  color: gray;
+  /*background-color: orange*/;
+  background-color: rgba(0,0,0,0.1);
+}
+#primeiro-paragrafo{
+  /*color: blue;*/
+  text-align: left;
+  font-weight: bold;
+}
+.titulo{
+  color: orange;
+  /*font-size: 18px;*/
+  text.transform: uppercase;
+}
+ul li{
+  font-style: italic;
+}
