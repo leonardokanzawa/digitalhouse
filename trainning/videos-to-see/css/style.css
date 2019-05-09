@@ -1,0 +1,38 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Anton', sans-serif;
+  background-color: #f9f9f7;
+}
+header{
+  background-color: black;
+  height: 8%;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+}
+header ul {
+    list-style-type: none;
+    margin-top: 25px;
+    padding: 0;
+    text-align: center
+}
+header ul li{
+  display: inline-block;
+}
+header ul li a{
+  text-decoration: none;
+  color: white;
+  padding: 25px;
+}
+main{
+  margin-top: 130px;
+  margin-left: 10px;
+}
+main p{
+  border-bottom: 1px solid black;
+  padding: 10px;
+}
