@@ -7,15 +7,21 @@
   </head>
   <body>
     <!-- Site para pesquisar os tipos de inputs https://www.w3schools.com/html/html_form_input_types.asp -->
+    <ul>
+      <li>item 1</li>
+      <li>item 2</li>
+      <li>item 3</li>
+      <li>item 4</li>
+    </ul>
     <form action="cadastro.html" method="post">
       <label for="nomeCompleto">Nome Completo</label><br>
-        <input type="text" name="nomeCompleto" id="nomeCompleto" placeholder="Leonardo Kanzawa"><br>
+        <input type="text" name="nomeCompleto" id="nomeCompleto" placeholder="Leonardo Kanzawa" required><br>
       <!-- <input type="submit" name="Enviar" value="Enviar"> -->
       <label for="email">E-mail</label><br>
-        <input type="email" name="email" id="email" placeholder="leonardo@7bi.me"><br>
+        <input type="email" name="email" id="email" placeholder="leonardo@7bi.me" required><br>
           <legend><em>Preferencialmente email do trabalho</em></legend>
       <label for="senha">Senha</label><br>
-        <input type="password" name="senha" id="senha"><br>
+        <input type="password" name="senha" id="senha" required><br>
       <label for="genero">Gênero</label><br>
         <input type="radio" name="genero" id="masculino" value="masculino">Masculino<br>
         <input type="radio" name="genero" id="feminimo" value="feminimo">Feminimo<br>
@@ -33,6 +39,23 @@
           <option value="faixa3">3 a 4</option>
           <option value="faixa5">Acima de 4</option>
         </select><br>
+        <label for="paisOrigem">País de Origem</label><br>
+          <select name="paisOrigem">
+            <option selected disabled>Selecione um país</option>
+            <optgroup label="America do Sul">
+              <option value="brasil">Brasil</option>
+              <option value="argentina">Argentina</option>
+              <option value="chile">Chile</option>
+            </optgroup>
+            <optgroup label="America do Norte">
+              <option value="canada">Canadá</option>
+              <option value="estadosUnidos">Estados Unidos</option>
+            </optgroup>
+          </select><br>
+        <label for="comentarios">Comentários</label><br>
+          <textarea name="comentarios" id="comentarios" rows="5" cols="80"></textarea><br>
+      <!-- <button type="button" name="validarCampos">Validar Campos</button> -->
+      <button type="reset" name="limparCampos">Limpar Campos</button>
       <button type="submit" name="enviar">Enviar</button>
     </form>
   </body>
