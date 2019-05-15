@@ -12,6 +12,15 @@ body{
   margin:0;
   font-family: "Arial";
 }
+header{
+  background-color: #555;
+  color: #fff;
+  position: fixed;
+  top:0;
+  left:0;
+  width: 100%;
+  z-index: 1;
+}
 header, section, footer{
   border:1px solid #ccc;
   padding: 20px;
@@ -24,12 +33,16 @@ p span{
 }
 section{
   overflow: hidden;
-  width: 80%;
-  margin: 0 auto;
+  max-width: 80%;
+  /* min-width: 500px; */
+  width: 950px;
+  margin: 70px auto;
+  position: relative;
 }
 div{
   border: 2px solid red;
   width: 20%;
+  min-width: 150px;
   padding: 20px 100px;
   margin: 2.5%;
   box-sizing: border-box;
