@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Craftsy | Login</title>
+  </head>
+  <body>
+    <header>
+      <!-- Cabeçalho -->
+      <nav class="main-nav">
+        <a href="index.html"
+          ><img class="logo" src="img/logo.png" alt="logo craftsy"
+        /></a>
+        <ul class="menu">
+          <li><a href="#">Smartphones</a></li>
+          <li><a href="#">Tablets</a></li>
+          <li><a href="#">Computadores</a></li>
+        </ul>
+        <ul class="menu access">
+          <li><a href="login.html">login</a></li>
+          <li><a href="register.html">registrar</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <form class="form-login">
+        <fieldset>
+        <!--O fieldset serve para agrupar dados similares numa mesma estrutura (dados comerciais, dados pessoais)  -->
+          <legend>Login</legend>
+          <label for="email">E-mail</label>
+          <input type="email" name="email" id="email" required>
+          <label for="senha">Senha</label>
+          <input type="password" name="senha" id="senha" required>
+          <button type="submit" name="login">Entrar</button>
+          <!-- Importante sempre colocar o name nos códigos para facilitar no java -->
+        </fieldset>
+      </form>
+    </main>
+  </body>
+</html>
